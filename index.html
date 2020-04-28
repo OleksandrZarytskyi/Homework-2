@@ -62,27 +62,27 @@
         <input type="text" placeholder="Вік" /><br>
         <input type="text" placeholder="Нікнейм" /><br>
         <h1>Яка ваша стать</h1>
-        <p><input type="radio" name="stat" checked>
-            <label>Чоловіча</label><br>
-            <input type="radio" name="stat">
-            <label>Жіноча</label>
+        <p><input type="radio" name="stat" id="mail"checked>
+            <label for="mail">Чоловіча</label><br>
+            <input type="radio" name="stat" id="fimail">
+            <label for="fimail">Жіноча</label>
         </p>
         <textarea rows="5" cols="50">Напишіть свій коментар...</textarea>
 
         <div>
             <select>
-                <option selected disabled>Виберіть будь-ласка місто</option>
-                <option>Новоград-Волинський</option>
-                <option>Житомир</option>
-                <option>Рівне</option>
-                <option>Корець</option>
-                <option>Ємільчено</option>
+                <option  value="town"selected disabled>Виберіть будь-ласка місто</option>
+                <option value="Novogrd">Новоград-Волинський</option>
+                <option value="Zytomyr">Житомир</option>
+                <option value="Rivne">Рівне</option>
+                <option value="Korets">Корець</option>
+                <option value="Emilcheno">Ємільчено</option>
             </select>
         </div>
         <h2>Вибір мови:<br>
-            <input type="checkbox" />Українська<br>
-            <input type="checkbox" />Руский<br>
-            <input type="checkbox" />English<br>
+            <input type="checkbox" name="stop" id="ua" checked /><label for="ua">Українська</label><br>
+            <input type="checkbox" name="stop" id="ru"/><label for="ru">Руский</label><br>
+            <input type="checkbox" name="stop" id="en"/><label for="en">English</label><br>
         </h2>
         <button>Відправити</button>
 
