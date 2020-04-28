@@ -17,7 +17,7 @@
             }
 
             h2 {
-                position: relative;
+                position:relative;
                 left: 620px;
             }
 
@@ -54,6 +54,16 @@
             #pon {
                 position: relative;
                 left: 620px;
+            }
+
+            #gop {
+                position: relative;
+                left: 550px;
+            }
+
+            .id {
+                background-color: aqua;
+                color: darkmagenta
             }
 
         </style>
@@ -95,10 +105,10 @@
                 <td>Wow@ukr.net</td>
             </tr>
         </table>
-        <input id="poq" type="text" placeholder="Ім'я" /><br>
-        <input id="poq" type="text" placeholder="Прізвище" /><br>
-        <input id="poq" type="text" placeholder="Вік" /><br>
-        <input id="poq" type="text" placeholder="Нікнейм" /><br>
+        <input id="poq" class="id" type="text" placeholder="Ім'я" /><br>
+        <input id="poq" class="id" type="text" placeholder="Прізвище" /><br>
+        <input id="poq" class="id" type="text" placeholder="Вік" /><br>
+        <input id="poq" class="id" type="text" placeholder="Нікнейм" /><br>
         <h3>Яка ваша стать</h3>
         <p id="ip"><input type="radio" name="stat" id="mail" checked>
             <label for="mail">Чоловіча</label><br>
@@ -107,7 +117,7 @@
         </p>
 
         <div id="pos">
-            <select>
+            <select class="id">
                 <option value="town" selected disabled>Виберіть будь-ласка місто</option>
                 <option value="Novogrd">Новоград-Волинський</option>
                 <option value="Zytomyr">Житомир</option>
@@ -117,12 +127,12 @@
             </select>
         </div>
         <h4>Вибір мови:<br>
-            <input type="checkbox" name="stop" id="ua" checked /><label for="ua">Українська</label><br>
+            <input type="checkbox" name="stop" id="ua" checked/><label for="ua">Українська</label><br>
             <input type="checkbox" name="stop" id="ru" /><label for="ru">Руский</label><br>
             <input type="checkbox" name="stop" id="en" /><label for="en">English</label><br>
         </h4>
-        <textarea rows="5" cols="10">Напишіть свій коментар...</textarea><br>
-        <button id="pon">Відправити</button>
+        <textarea rows="5" cols="30" id="gop" class="id">Напишіть свій коментар...</textarea><br>
+        <button id="pon" class="id">Відправити</button>
 
     </body>
 
