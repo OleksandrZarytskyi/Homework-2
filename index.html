@@ -7,15 +7,53 @@
         <style>
             body {
                 background-color: black;
-                color: yellow
+                color: yellow;
+                font-family: Bradley Hand, cursive;
+                font-weight: 10;
             }
 
             h1 {
-                padding-left: 500px;
+                padding-left: 530px;
+            }
+
+            h2 {
+                position: relative;
+                left: 620px;
             }
 
             h3 {
-                padding-left: 120px;
+                position: relative;
+                left: 600px;
+            }
+
+            h4 {
+                position: relative;
+                left: 620px;
+            }
+
+            #pop {
+                position: relative;
+                left: 480px;
+            }
+
+            #poq {
+                position: relative;
+                left: 580px;
+            }
+
+            #ip {
+                position: relative;
+                left: 620px;
+            }
+
+            #pos {
+                position: relative;
+                left: 573px;
+            }
+
+            #pon {
+                position: relative;
+                left: 620px;
             }
 
         </style>
@@ -24,8 +62,8 @@
 
     <body>
         <h1>Homework#2 html</h1>
-        <h3>Таблиця</h3>
-        <table border="2">
+        <h2>Таблиця</h2>
+        <table border="10" id="pop">
             <tr>
                 <td>Ім'я</td>
                 <td>Прізвище</td>
@@ -57,21 +95,20 @@
                 <td>Wow@ukr.net</td>
             </tr>
         </table>
-        <input type="text" placeholder="Ім'я" /><br>
-        <input type="text" placeholder="Прізвище" /><br>
-        <input type="text" placeholder="Вік" /><br>
-        <input type="text" placeholder="Нікнейм" /><br>
-        <h1>Яка ваша стать</h1>
-        <p><input type="radio" name="stat" id="mail"checked>
+        <input id="poq" type="text" placeholder="Ім'я" /><br>
+        <input id="poq" type="text" placeholder="Прізвище" /><br>
+        <input id="poq" type="text" placeholder="Вік" /><br>
+        <input id="poq" type="text" placeholder="Нікнейм" /><br>
+        <h3>Яка ваша стать</h3>
+        <p id="ip"><input type="radio" name="stat" id="mail" checked>
             <label for="mail">Чоловіча</label><br>
             <input type="radio" name="stat" id="fimail">
             <label for="fimail">Жіноча</label>
         </p>
-        <textarea rows="5" cols="50">Напишіть свій коментар...</textarea>
 
-        <div>
+        <div id="pos">
             <select>
-                <option  value="town"selected disabled>Виберіть будь-ласка місто</option>
+                <option value="town" selected disabled>Виберіть будь-ласка місто</option>
                 <option value="Novogrd">Новоград-Волинський</option>
                 <option value="Zytomyr">Житомир</option>
                 <option value="Rivne">Рівне</option>
@@ -79,12 +116,13 @@
                 <option value="Emilcheno">Ємільчено</option>
             </select>
         </div>
-        <h2>Вибір мови:<br>
+        <h4>Вибір мови:<br>
             <input type="checkbox" name="stop" id="ua" checked /><label for="ua">Українська</label><br>
-            <input type="checkbox" name="stop" id="ru"/><label for="ru">Руский</label><br>
-            <input type="checkbox" name="stop" id="en"/><label for="en">English</label><br>
-        </h2>
-        <button>Відправити</button>
+            <input type="checkbox" name="stop" id="ru" /><label for="ru">Руский</label><br>
+            <input type="checkbox" name="stop" id="en" /><label for="en">English</label><br>
+        </h4>
+        <textarea rows="5" cols="10">Напишіть свій коментар...</textarea><br>
+        <button id="pon">Відправити</button>
 
     </body>
 
